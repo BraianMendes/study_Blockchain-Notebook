@@ -42,4 +42,4 @@ Every year the diagram is updated and I re-study it again.
 
 ## Blockchain Study Diagram
 
-![](.gitbook/assets/blockchain.pdf)
+![](.gitbook/assets/blockchain.jpg)
