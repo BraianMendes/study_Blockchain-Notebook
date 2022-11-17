@@ -1,0 +1,12 @@
+# Blockchain Oracle
+A blockchain oracle is a third-party service that connects smart contracts with the outside world, primarily to feed information in from the world, but also the reverse. Information from the world encapsulates multiple sources, so that decentralised knowledge is obtained. Information to the world includes making payments and notifying parties. The oracle is the layer that queries, verifies, and authenticates external data sources, usually via trusted APIs, proprietary corporate data feeds and internet of things feeds and then relays that information.
+
+# Examples
+Many Ethereum applications use oracles. For example, prediction market Augur would use election data to settle corresponding bets. Projects like Chainlink provide decentralised oracle network services to many blockchains.
+
+Examples of data transmitted by oracles to smart contracts include price information, the successful completion of a payment, the temperature measured by a sensor, election outcomes, etc. Data can be supplied by other software (databases, servers, or essentially any online data source), or by hardware (sensors, barcode scanners, etc.). A hardware oracle can be seen as relaying real-world events into digital values that can be understood by smart contracts. Both types are inbound oracles. Human oracles are individuals with specialized knowledge who can verify the authenticity of information before relaying it to smart contracts, and who prove their identity cryptographically.
+
+Outbound oracles send information from smart contracts to the external world. For example, a smart contract receiving a payment could send information through an outbound oracle to a mechanism that unlocks a smart lock.
+
+# Concerns
+If an oracle relies on a single source of truth (centralized), that can lead to issues: the data source can be hacked in a man-in-the-middle attack, or altered by its owner, in order to sway smart contracts. Decentralized oracles (consensus oracles) increase the reliability of the information provided to smart contracts by querying multiple data sources, thus distributing trust between participants. However, this does not achieve trustlessness, since oracles are not part of the main blockchain consensus, and thus not part of the security mechanisms of public blockchains.
